@@ -29,9 +29,8 @@ spec:
         image: 296062550816.dkr.ecr.us-east-1.amazonaws.com/suraj/dev/catalogue:1.0
         imagePullPolicy: Always
         envFrom:
-        - name: 
-            configMapRef:
-              name: catalogue-config
+        - configMapRef:
+            name: catalogue-config
 
   
 ---
