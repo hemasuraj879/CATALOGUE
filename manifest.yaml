@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
-metdata:
+metadata:
   name: catalogue
   namespace: suraj
   labels:
@@ -29,7 +29,7 @@ spec:
         image: 296062550816.dkr.ecr.us-east-1.amazonaws.com/suraj/dev/catalogue:1.0
         imagePullPolicy: Always
         envFrom:
-        - name:
+        - name: 
             configMapRef:
               name: catalogue-config
 
